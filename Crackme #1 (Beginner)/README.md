@@ -60,7 +60,7 @@ decrypt_password:
 In this function user input is "decrypted", every char is casted to (char) and check modulo(char % 2 ==0)
 and then jump to dividable function
 
-```
+```assembly
 dividable:
     sub rdi, 0x3
     mov rax, rdi
