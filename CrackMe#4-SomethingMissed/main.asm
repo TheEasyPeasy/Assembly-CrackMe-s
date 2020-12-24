@@ -2,7 +2,6 @@ extern puts
 extern exit
 extern ptrace
 extern printf
-extern putchar
 
 section .text
 global _start
@@ -68,7 +67,7 @@ dump_me:
     mov BYTE [rax + rdx], 0x74
     mov BYTE[r11 + rdx], 0x73
     inc rdx
-    mov BYTE [rax + rdx], 0x65 ;x68 0x33 0x4C 0x4C 0x30
+    mov BYTE [rax + rdx], 0x65
     mov BYTE[r11 + rdx], 0x62
     inc rdx
     mov BYTE[r11 + rdx], 0x73
